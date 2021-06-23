@@ -38,7 +38,7 @@ class ImportHrAttendanceWizard(models.TransientModel):
 
     file = fields.Binary('File')
     filename = fields.Char('Filename')
-    branch_id = fields.Many2one('res.company', 'Branch', required=True)
+    branch_id = fields.Many2one('company.branches', 'Branch', required=True)
 
     def import_file(self):
         if not self.file:
