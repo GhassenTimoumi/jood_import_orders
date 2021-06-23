@@ -101,7 +101,7 @@ class ImportHrAttendanceWizard(models.TransientModel):
             Donation.create({
                 'donation_date': line['date'],
                 'partner_id': partner.id,
-                'branch_id': self.branch_id.id,
+                # 'branch_id': self.branch_id.id,
                 'donation_type': 'money',
                 'payment_method_type': payment_method_type,
                 'donation_line':[(0, 0, {
