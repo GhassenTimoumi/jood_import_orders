@@ -1,0 +1,71 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* jood_import_orders
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20200909\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-23 09:59+0000\n"
+"PO-Revision-Date: 2021-06-23 09:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: jood_import_orders
+#: model:ir.model.fields,field_description:jood_import_orders.field_jood_import__branch_id
+msgid "Branch"
+msgstr "الفرع"
+
+#. module: jood_import_orders
+#: model_terms:ir.ui.view,arch_db:jood_import_orders.wizard_jood_import
+msgid "Close"
+msgstr "إقفال"
+
+#. module: jood_import_orders
+#: model:ir.model.fields,field_description:jood_import_orders.field_donation_donation__display_name
+#: model:ir.model.fields,field_description:jood_import_orders.field_donation_line__display_name
+#: model:ir.model.fields,field_description:jood_import_orders.field_jood_import__display_name
+msgid "Display Name"
+msgstr "الاسم"
+
+#. module: jood_import_orders
+#: model:ir.model.fields,field_description:jood_import_orders.field_jood_import__file
+msgid "File"
+msgstr "الملف"
+
+#. module: jood_import_orders
+#: model:ir.model.fields,field_description:jood_import_orders.field_jood_import__filename
+msgid "Filename"
+msgstr "اسم الملف"
+
+#. module: jood_import_orders
+#: model_terms:ir.ui.view,arch_db:jood_import_orders.wizard_jood_import
+msgid "Import"
+msgstr "استيراد"
+
+#. module: jood_import_orders
+#: model:ir.actions.act_window,name:jood_import_orders.open_jood_import
+#: model:ir.ui.menu,name:jood_import_orders.menu_jood_import
+msgid "Import Donations"
+msgstr "استيراد التبرعات المالية"
+
+#. module: jood_import_orders
+#: code:addons/jood_import_orders/models/wizard.py:0
+#, python-format
+msgid "Please Select Valid File Format !"
+msgstr "الملف لابد أن يكون بصيغة إكسل"
+
+#. module: jood_import_orders
+#: code:addons/jood_import_orders/models/wizard.py:0
+#, python-format
+msgid "Please Upload File to Import Donations !"
+msgstr "أرجو تحميل ملف إكسل للإستيراد"
+
+#. module: jood_import_orders
+#: model:ir.model,name:jood_import_orders.model_jood_import
+msgid "jood.import"
+msgstr ""

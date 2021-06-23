@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="wizard_jood_import" model="ir.ui.view">
+        <field name="name">jood.import</field>
+        <field name="model">jood.import</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="filename" invisible="1"/>
+                        <field name="file" widget="binary" filename="filename"/>
+                        <field name="branch_id" options='{"no_open": True, "no_create_edit": 1, "no_create" : 1}'/>
+                    </group>
+                </sheet>
+
+                <footer>
+                    <button name="import_file" type="object" string="Import" class="oe_highlight"/>
+                    <button special="cancel" string="Close" class="oe_link"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="open_jood_import" model="ir.actions.act_window">
+        <field name="name">Import Donations</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">jood.import</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_jood_import"
+              name="Import Donations"
+              sequence="40"
+              action="open_jood_import"/>
+
+</odoo>

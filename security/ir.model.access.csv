@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_jood_import_user,access_jood_import,model_jood_import,base.group_user,1,1,1,1

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="donation_search_view">
+        <field name="name">Donations</field>
+        <field name="model">donation.donation</field>
+        <field name="inherit_id" ref="donation.view_donation_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" operation="after">
+                <field name="donation_line" filter_domain="[('donation_line.instruction', 'ilike', self)]"/>
+            </xpath>
+        </field>
+    </record>
+
+    <menuitem id="menu_donation_donation"
+              name="Donations"
+              action="donation_donation_action"
+              sequence="10"/>
+</odoo>
