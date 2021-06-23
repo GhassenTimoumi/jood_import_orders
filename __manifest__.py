@@ -9,8 +9,8 @@
     ],
     "data": [
         "security/ir.model.access.csv",
-        "wizard/wizard.xml",
         "views/donation_views.xml",
+        "wizard/wizard.xml",
     ],
     "application": False,
     "installable": True,

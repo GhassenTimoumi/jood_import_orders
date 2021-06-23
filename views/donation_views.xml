@@ -12,8 +12,4 @@
         </field>
     </record>
 
-    <menuitem id="menu_donation_donation"
-              name="Donations"
-              action="donation_donation_action"
-              sequence="10"/>
 </odoo>
