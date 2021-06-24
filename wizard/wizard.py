@@ -99,6 +99,8 @@ class ImportHrAttendanceWizard(models.TransientModel):
             if not product:
                 product = self.env['product.product'].search([('name', 'like', 'الصدقه النقديه العامه')], limit=1)
             Donation.create({
+            # print({
+                'payment_reference': line['number'],
                 'donation_date': line['date'],
                 'partner_id': partner.id,
                 # 'branch_id': self.branch_id.id,
